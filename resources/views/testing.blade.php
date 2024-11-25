@@ -6,7 +6,7 @@
     @include('includes.header')
 
     <!-- Content section -->
-    @include('layout.homeContent')
+    @include('layout.testingContent')
 
     <!-- Footer -->
     @include('includes.footer')

@@ -37,6 +37,57 @@
             color: #4299e1;
             /* Warna teks saat ditekan/aktif */
         }
+
+        /* hover */
+
+        .card-hover {
+            position: relative;
+            overflow: hidden;
+        }
+    
+        .description-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            backdrop-filter: blur(3px);
+        }
+    
+        .card-hover:hover .description-overlay{
+            opacity: 1;
+        }
+
+        .description-overlay2 {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            backdrop-filter: blur(3px);
+        }
+        
+        .card-hover:hover .description-overlay2{
+            opacity: 1;
+        }
     </style>
 </head>
 

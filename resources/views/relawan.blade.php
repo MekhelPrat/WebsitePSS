@@ -3,13 +3,12 @@
 @section('content')
 <div class="bg-black">
     <!-- Navigation Bar -->
-    @include('layout.header')
+    @include('includes.header')
 
     <!-- Content section -->
-    @include('layout.gabungContent')
+    @include('layout.relawanContent')
 
     <!-- Footer -->
-    @include('layout.footer')
+    @include('includes.footer')
 </div>
 @endsection
-

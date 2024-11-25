@@ -6,9 +6,9 @@
     @include('includes.header')
 
     <!-- Content section -->
-    @include('layout.homeContent')
+    @include('layout.magangContent')
 
     <!-- Footer -->
-    @include('includes.footer')
+    @include('includes.footer2')
 </div>
 @endsection
