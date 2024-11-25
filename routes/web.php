@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\EventController;
 use Illuminate\Support\Facades\Route;
 
 // Route::get('/welcome', function () {
@@ -15,9 +16,13 @@ Route::get('/about', function(){
     return view('about');
 })->name('about');
 
-Route::get('/event', function(){
-    return view('event');
-})->name('event');
+// Route::get('/event', function(){
+//     return view('event');
+// })->name('event');
+
+Route::get('/event', [EventController::class, 'index'])->name('event');
+
+// Route::resource('events',EventController::class)->shallow();
 
 Route::get('/artikel', function(){
     return view('artikel');
