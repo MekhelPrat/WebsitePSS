@@ -44,6 +44,14 @@ Route::get('/donasi', function(){
     return view('donasi');
 })->name('donasi');
 
+Route::get('/admin', function(){
+    return view('admin');
+})->name('admin');
+
+Route::get('/adminHome', function(){
+    return view('adminHome');
+})->name('adminHome');
+
 Route::get('/testing', function(){
     return view('testing');
 })->name('testing');
