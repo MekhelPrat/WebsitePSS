@@ -1,14 +1,11 @@
 <?php
 
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\ArtikelController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\EventController;
 use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
-
-// Route::get('/', function () {
-//     return view('home');
-// });
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
 
@@ -20,17 +17,13 @@ Route::get('/about', function(){
     return view('about');
 })->name('about');
 
-// Route::get('/event', function(){
-//     return view('event');
-// })->name('event');
-
 Route::get('/event', [EventController::class, 'index'])->name('event');
 
-// Route::resource('events',EventController::class)->shallow();
+Route::get('/artikel', [ArtikelController::class, 'index'])->name('artikel');
 
-Route::get('/artikel', function(){
-    return view('artikel');
-})->name('artikel');
+// Route::get('/artikel', function(){
+//     return view('artikel');
+// })->name('artikel');
 
 Route::get('/addberita', function(){
     return view('addberita');
@@ -88,6 +81,9 @@ Route::middleware(['auth', 'verified'])->group(function () {
 
     Route::get('/admin/store', [AdminController::class, 'store'])->name('admin.store.get');
     Route::post('/admin/store', [AdminController::class, 'store'])->name('admin.store.post');
+
+    Route::get('/admin/berita', [AdminController::class, 'storeBerita'])->name('admin.berita.get');
+    Route::post('/admin/berita', [AdminController::class, 'storeBerita'])->name('admin.berita.post');
 });
 
 Route::middleware('auth')->group(function () {

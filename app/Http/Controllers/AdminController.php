@@ -66,6 +66,44 @@ class AdminController extends Controller
         }
     }
 
+    public function storeBerita(Request $request)
+    {
+
+        if ($request->isMethod('get')) {
+            return view('admin.berita'); // For GET requests
+        }
+
+        if ($request->isMethod('post')) {
+            // Validasi data
+            $request->validate([
+                'title' => 'required|string|max:255',
+                'date' => 'required|date',
+                'description' => 'required|string',
+                'image' => 'required|image|mimes:jpeg,png,jpg,gif|max:2048',
+            ]);
+
+            // Simpan file gambar
+            $image = time() . '.' . $request->image->extension(); // Generate a unique file name
+            $request->image->move(public_path('assets'), $image); // Save the file in the public folder
+    
+
+            // Simpan data ke database
+            $item = Event::create([
+                'title' => $request->input('title'),
+                'date' => $request->input('date'),
+                'description' => $request->input('description'),
+                'image' => 'assets/' . $image,
+            ]);
+
+            return response()->json([
+                'message' => 'Item successfully added!',
+                'data' => $item,
+            ], 201);
+
+            return redirect()->route('admin.index')->with('success', 'Store added successfully!');
+        }
+    }
+
     /**
      * Display the specified resource.
      */
