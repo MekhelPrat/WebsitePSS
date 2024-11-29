@@ -50,4 +50,9 @@ class User extends Authenticatable
         {
             return $this->hasMany(Event::class, 'user_id');
         }
+
+    public function beritas()
+    {
+        return $this->hasMany(Berita::class, 'user_id');
+    }
 }
