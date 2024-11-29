@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Berita;
 use App\Models\Event;
 use Illuminate\Http\Request;
 use App\Models\User;
@@ -88,17 +89,18 @@ class AdminController extends Controller
     
 
             // Simpan data ke database
-            $item = Event::create([
+            $item = Berita::create([
                 'title' => $request->input('title'),
                 'date' => $request->input('date'),
                 'description' => $request->input('description'),
                 'image' => 'assets/' . $image,
             ]);
 
-            return response()->json([
-                'message' => 'Item successfully added!',
-                'data' => $item,
-            ], 201);
+            dd($item);
+            // return response()->json([
+            //     'message' => 'Item successfully added!',
+            //     'data' => $item,
+            // ], 201);
 
             return redirect()->route('admin.index')->with('success', 'Store added successfully!');
         }
