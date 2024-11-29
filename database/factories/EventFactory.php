@@ -23,6 +23,7 @@ class EventFactory extends Factory
             'title' => $this->faker->word(),
             'price' => $this->faker->numberBetween(100000, 1000000),
             'description' => $this->faker->paragraph(),
+            'image' => $this->faker->imageUrl,
         ];
     }
 }
