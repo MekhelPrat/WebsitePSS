@@ -91,26 +91,27 @@
     
         <section class="flex flex-col self-center max-w-full sm:max-w-full md:max-w-full" style="background-color: #132A53;">
             <h2 class="items-start justify-start text-3xl sm:text-4xl md:text-5xl ml-36 font-bold text-stone-50">Aksi Kami</h2>
-            <div class="flex flex-wrap gap-5 sm:gap-8 md:gap-10 justify-center items-center mt-10 sm:mt-14 md:mt-16 lg:mt-20 text-lg sm:text-xl font-bold text-center text-white">
-                <article class="flex flex-col self-stretch mx-10 my-auto whitespace-nowrap w-full sm:w-[45%] md:w-[325px]" onclick="openModal('Kampanye Bijak Nyampah', 'https://cdn.builder.io/api/v1/image/assets/TEMP/a4f03099205772b226788d02f5da0b83e10744831bb2e253e5b3547fc2de2e0a?placeholderIfAbsent=true&apiKey=c1377a7c791a4a95a2c1ef4a3fe24484', 'Program utama yang bertujuan mengajak masyarakat luas untuk bersama-sama berpikir dan bertanggung jawab dalam menghasilkan sampah, baik sebelum maupun setelah konsumsi. Program ini bertujuan untuk edukasi, perubahan mindset, dan kebiasaan dalam mengelola sampah sehingga volume sampah yang dihasilkan bisa berkurang.')">
+            <div class="flex flex-wrap gap-5 sm:gap-8 md:gap-8 justify-center items-center mt-10 sm:mt-14 md:mt-16 lg:mt-20 text-lg sm:text-xl font-bold text-center text-white">
+                <article class="flex flex-col self-stretch mx-10 my-auto whitespace-nowrap w-full sm:w-[45%] md:w-[300px]" onclick="openModal('Kampanye Bijak Nyampah', 'https://cdn.builder.io/api/v1/image/assets/TEMP/a4f03099205772b226788d02f5da0b83e10744831bb2e253e5b3547fc2de2e0a?placeholderIfAbsent=true&apiKey=c1377a7c791a4a95a2c1ef4a3fe24484', 'Program utama yang bertujuan mengajak masyarakat luas untuk bersama-sama berpikir dan bertanggung jawab dalam menghasilkan sampah, baik sebelum maupun setelah konsumsi. Program ini bertujuan untuk edukasi, perubahan mindset, dan kebiasaan dalam mengelola sampah sehingga volume sampah yang dihasilkan bisa berkurang.')">
                     <div class="flex relative flex-col pt-48 sm:pt-56 md:pt-64 w-full rounded-xl aspect-[0.74]">
                         <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/a4f03099205772b226788d02f5da0b83e10744831bb2e253e5b3547fc2de2e0a?placeholderIfAbsent=true&apiKey=c1377a7c791a4a95a2c1ef4a3fe24484" alt="Illustration of responsible waste management" class="object-cover absolute inset-0 size-full" />
                         <h3 class="relative px-3 mt-36 sm:px-8 md:px-11 py-2 sm:py-3 md:py-3.5 bg-blue-500 rounded-none">Bijak Nyampah</h3>
                     </div>
                 </article>
-                <article class="flex flex-col self-stretch mx-10 my-auto whitespace-nowrap w-full sm:w-[45%] md:w-[325px]" onclick="openModal('Ecotour', 'https://cdn.builder.io/api/v1/image/assets/TEMP/62793e551eec845c5a7a1a87c05099d14346594c18ee870c093cc6a747791f54?placeholderIfAbsent=true&apiKey=c1377a7c791a4a95a2c1ef4a3fe24484', 'Ecotour description...')">
+                <article class="flex flex-col self-stretch mx-10 my-auto whitespace-nowrap w-full sm:w-[45%] md:w-[300px]" onclick="openModal('Ecotour', 'https://cdn.builder.io/api/v1/image/assets/TEMP/62793e551eec845c5a7a1a87c05099d14346594c18ee870c093cc6a747791f54?placeholderIfAbsent=true&apiKey=c1377a7c791a4a95a2c1ef4a3fe24484', 'Ecotour description...')">
                     <div class="flex relative flex-col pt-48 sm:pt-56 md:pt-64 w-full rounded-xl aspect-[0.74]">
                         <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/62793e551eec845c5a7a1a87c05099d14346594c18ee870c093cc6a747791f54?placeholderIfAbsent=true&apiKey=c1377a7c791a4a95a2c1ef4a3fe24484" alt="Ecotourism activity illustration" class="object-cover absolute inset-0 size-full" />
                         <h3 class="relative px-10 mt-36 sm:px-12 md:px-16 py-2 sm:py-3 md:py-4 bg-blue-500 rounded-none">Ecotour</h3>
                     </div>
                 </article>
-                <article class="flex flex-col self-stretch mx-10 my-auto whitespace-nowrap w-full sm:w-[45%] md:w-[325px]" onclick="openModal('Workshop', 'https://cdn.builder.io/api/v1/image/assets/TEMP/aaaec6ddd5453991a4cf6de6762758c65d15258700c06e91b3a32926d85931bc?placeholderIfAbsent=true&apiKey=c1377a7c791a4a95a2c1ef4a3fe24484', 'Workshop description...')">
-                    <div class="flex relative flex-col pt-48 sm:pt-56 md:pt-64 w-full rounded-xl aspect-[0.743]">
+                <article class="flex flex-col self-stretch mx-10 my-auto whitespace-nowrap w-full sm:w-[45%] md:w-[300px]" onclick="openModal('Workshop', 'https://cdn.builder.io/api/v1/image/assets/TEMP/aaaec6ddd5453991a4cf6de6762758c65d15258700c06e91b3a32926d85931bc?placeholderIfAbsent=true&apiKey=c1377a7c791a4a95a2c1ef4a3fe24484', 'Workshop description...')">
+                    <div class="flex relative flex-col pt-48 sm:pt-56 md:pt-64 w-full rounded-xl aspect-[0.74
+                    ]">
                         <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/aaaec6ddd5453991a4cf6de6762758c65d15258700c06e91b3a32926d85931bc?placeholderIfAbsent=true&apiKey=c1377a7c791a4a95a2c1ef4a3fe24484" alt="Workshop activity illustration" class="object-cover absolute inset-0 size-full" />
                         <h3 class="relative px-10 mt-36 sm:px-12 md:px-16 py-2 sm:py-3 md:py-3.5 bg-blue-500 rounded-none">Workshop</h3>
                     </div>
                 </article>
-                <article class="flex flex-col self-stretch mx-10 my-auto whitespace-nowrap w-full sm:w-[45%] md:w-[325px]" onclick="openModal('Pelatihan', 'https://cdn.builder.io/api/v1/image/assets/TEMP/179956c17661af74ca31837a66d5f1fc06fb59c6009699d4b538d111b0b54136?placeholderIfAbsent=true&apiKey=c1377a7c791a4a95a2c1ef4a3fe24484', 'Pelatihan description...')">
+                <article class="flex flex-col self-stretch mx-10 my-auto whitespace-nowrap w-full sm:w-[45%] md:w-[300px]" onclick="openModal('Pelatihan', 'https://cdn.builder.io/api/v1/image/assets/TEMP/179956c17661af74ca31837a66d5f1fc06fb59c6009699d4b538d111b0b54136?placeholderIfAbsent=true&apiKey=c1377a7c791a4a95a2c1ef4a3fe24484', 'Pelatihan description...')">
                     <div class="flex relative flex-col pt-48 sm:pt-56 md:pt-64 w-full rounded-xl aspect-[0.743]">
                         <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/179956c17661af74ca31837a66d5f1fc06fb59c6009699d4b538d111b0b54136?placeholderIfAbsent=true&apiKey=c1377a7c791a4a95a2c1ef4a3fe24484" alt="Pelatihan activity illustration" class="object-cover absolute inset-0 size-full" />
                         <h3 class="relative px-10 mt-36 sm:px-12 md:px-16 py-2 sm:py-3 md:py-3.5 bg-blue-500 rounded-none">Pelatihan</h3>
