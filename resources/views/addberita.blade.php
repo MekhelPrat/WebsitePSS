@@ -1,7 +1,7 @@
 @extends('base.app')
 
 @section('content')
-<div class="bg-black">
+<div class="bg-white">
     <!-- Navigation Bar -->
     @include('includes.header')
 
