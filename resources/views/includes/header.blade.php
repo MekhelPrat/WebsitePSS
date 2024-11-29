@@ -15,6 +15,8 @@
                 <li><a href="{{ route('about') }}" class="nav-link {{ request()->routeIs('about') ? 'active' : '' }} mx-14">Tentang</a></li>
                 <li><a href="{{ route('event') }}" class="nav-link {{ request()->routeIs('event') ? 'active' : '' }} mx-14">Aksi</a></li>
                 <li><a href="{{ route('artikel') }}" class="nav-link {{ request()->routeIs('artikel') ? 'active' : '' }} mx-14">Berita</a></li>
+                {{-- <li><a href="{{ route('replastik') }}" class="nav-link {{ request()->routeIs('replastik') ? 'active' : '' }} mx-14">Replastik</a></li> --}}
+
                 
                 <!-- Gabung Dropdown -->
                 <li class="relative group">

@@ -5,10 +5,13 @@
     <!-- Navigation Bar -->
     @include('includes.header')
 
-    <div class="flex flex-col w-full bg-blue-950 max-w-full">
-        <div class="flex flex-row items-center justify-between mx-4 sm:mx-8 md:mx-16 lg:mx-28 max-w-full w-full sm:w-[80%] md:w-[60%] lg:w-[auto]">
-            <div class="flex flex-col flex-1">
-                <div class="flex items-center ml-32 z-20">
+    <div class="flex flex-col w-full bg-blue-950">
+        <!-- Header Section -->
+        <div class="container mx-auto flex flex-col sm:flex-row items-center justify-between px-4 sm:px-8 md:px-16 lg:px-28 py-6">
+            <!-- Social Media Links & Heading -->
+            <div class="flex flex-col flex-1 items-start">
+                <!-- Social Media Links -->
+                <div class="flex items-center space-x-4">
                     <a href="https://www.instagram.com/pedulisungaisurabaya/?hl=en" target="_blank">
                         <img src="{{ asset('assets/SosmedLogo/ig.png') }}" class="object-contain w-8 h-8" alt="Instagram icon" />
                     </a>
@@ -22,17 +25,32 @@
                         <img src="{{ asset('assets/SosmedLogo/fb.png') }}" class="object-contain w-9 h-9" alt="Facebook icon" />
                     </a>
                 </div>
-                <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold text-white max-w-full ml-32">PEDULI SUNGAI <br> SURABAYA</h1>
-                <a href="#join-now" class="self-start px-6 ml-32 sm:px-7 md:px-8 lg:px-9 py-3 sm:py-4 md:py-5 mt-8 sm:mt-10 md:mt-12 lg:mt-14 text-lg sm:text-xl font-bold text-center bg-blue-500 rounded-[50px] text-stone-50 hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-700 transition-colors duration-300">Gabung Sekarang</a>
-            </div>
-            <img src="{{ asset('assets/Eco conscious-bro 1.png') }}" alt="Deskripsi Gambar" class="mr-44 w-auto max-w-full" style="max-height: 100%; object-fit: contain;">
-        </div>    
-        <div class="flex relative flex-col w-full">
-            <img src="{{ asset('assets/Group 33.png') }}" alt="Deskripsi Gambar" class="w-full h-auto object-contain">
-        </div>
-    </div>
     
-    <section class="flex flex-col pt-14 sm:pt-20 md:pt-24 lg:pt-28 w-full bg-stone-50 max-w-full" style="background-color: #F9F9F9;">
+                <!-- Heading -->
+                <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold text-white mt-6">
+                    PEDULI SUNGAI <br> SURABAYA
+                </h1>
+    
+                <!-- Join Button -->
+                <a href="#join-now" class="px-6 py-3 mt-8 text-lg font-bold text-white bg-blue-500 rounded-full hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-700 transition-all">
+                    Gabung Sekarang
+                </a>
+            </div>
+    
+            <!-- Illustration Image -->
+            {{-- <img src="{{ asset('assets/Icon/IconHome.png') }}" alt="Deskripsi Gambar" class="w-full sm:w-auto max-w-lg mt-6 sm:mt-0" style="object-fit: contain;"> --}}
+
+            <img src="{{ asset('assets/Eco conscious-bro 1.png') }}" alt="Deskripsi Gambar" class="w-full sm:w-auto max-w-lg mt-6 sm:mt-0" style="object-fit: contain;">
+        </div>
+    
+        <!-- Divider Image -->
+            <div class="flex relative flex-col w-full">
+                <img src="{{ asset('assets/Group 33.png') }}" alt="Deskripsi Gambar" class="w-full h-auto object-contain">
+            </div>
+    </div>
+
+    <section class="flex flex-col pt-14 sm:pt-20 md:pt-24 lg:pt-28 w-full bg-stone-50 max-w-full">
+        
         <section class="self-start w-full ml-16 max-w-full sm:max-w-sm md:max-w-[1280px]">
             <div class="flex flex-col md:flex-row gap-5">
                 <div class="flex flex-col w-full md:w-auto">
@@ -57,6 +75,16 @@
             </div>
         </section>
     
+
+
+
+
+
+
+
+
+
+
         <div class="flex relative flex-col w-full mt-36">
             <img src="{{ asset('assets/Group 34.png') }}" alt="Deskripsi Gambar" class="w-full h-auto object-contain">
         </div>
@@ -159,6 +187,23 @@
             </div>
         </section>
     </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     
     <div id="modal" class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden">
         <div class="flex items-center justify-center w-full h-full">

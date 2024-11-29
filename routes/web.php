@@ -32,6 +32,10 @@ Route::get('/artikel', function(){
     return view('artikel');
 })->name('artikel');
 
+Route::get('/addberita', function(){
+    return view('addberita');
+})->name('addberita');
+
 Route::get('/relawan', function(){
     return view('relawan');
 })->name('relawan');
@@ -55,6 +59,10 @@ Route::get('/admin', function(){
 Route::get('/adminHome', function(){
     return view('adminHome');
 })->name('adminHome');
+
+Route::get('/replastik', function(){
+    return view('replastik');
+})->name('replastik');
 
 Route::get('/testing', function(){
     return view('testing');
