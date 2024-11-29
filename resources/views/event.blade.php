@@ -5,7 +5,8 @@
     <!-- Navigation Bar -->
     @include('includes.header')
 
-    <section class="flex overflow-hidden flex-col items-center bg-stone-50">
+    @include('layout.eventContent')
+    {{-- <section class="flex overflow-hidden flex-col items-center bg-stone-50">
     <div class="flex flex-col w-full bg-blue-950 max-w-full">
         <div class="flex flex-col md:flex-row items-center justify-between mx-4 sm:mx-8 md:mx-16 lg:mx-28 max-w-full w-full">
             <div class="flex flex-col flex-1 text-center md:text-left">
@@ -106,7 +107,7 @@
         }, 500);
     });
 
-</script>
+</script> --}}
   
 
     <!-- Footer -->
