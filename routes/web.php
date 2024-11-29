@@ -1,16 +1,20 @@
 <?php
 
+use App\Http\Controllers\AdminController;
+use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\EventController;
+use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
 
-// Route::get('/welcome', function () {
-//     return view('welcome');
+// Route::get('/', function () {
+//     return view('home');
 // });
 
+Route::get('/', [HomeController::class, 'index'])->name('home');
 
-Route::get('/', function(){
-    return view('home');
-})->name('home');
+// Route::get('/dashboard', function () {
+//     return view('dashboard');
+// })->middleware(['auth', 'verified'])->name('dashboard');
 
 Route::get('/about', function(){
     return view('about');
@@ -55,3 +59,33 @@ Route::get('/adminHome', function(){
 Route::get('/testing', function(){
     return view('testing');
 })->name('testing');
+
+// Route::middleware(['auth', 'verified'])->group(function () {
+//     Route::get('/admin', function () {
+//         return view('admin');
+//     })->name('admin');
+
+//     Route::get('/adminHome', function () {
+//         return view('adminHome');
+//     })->name('adminHome');
+
+//     // Example: Testing page for admin
+//     Route::get('/testing', function () {
+//         return view('testing');
+//     })->name('testing');
+// });
+
+Route::middleware(['auth', 'verified'])->group(function () {
+    Route::get('/admin', [AdminController::class, 'index'])->name('admin.index');
+
+    Route::get('/admin/store', [AdminController::class, 'store'])->name('admin.store.get');
+    Route::post('/admin/store', [AdminController::class, 'store'])->name('admin.store.post');
+});
+
+Route::middleware('auth')->group(function () {
+    Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
+    Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
+    Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
+});
+
+require __DIR__.'/auth.php';

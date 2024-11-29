@@ -11,7 +11,7 @@
             
             <!-- Nav -->
             <ul id="menu" class="hidden flex-col sm:flex sm:flex-row gap-3 sm:gap-5 md:gap-8 lg:gap-10 self-stretch my-auto text-white max-w-full">
-                <li><a href="{{ route('home') }}" class="nav-link {{ request()->routeIs('home') ? 'active' : '' }} mx-14">Home</a></li>
+                <li><a href="{{ route('admin.index') }}" class="nav-link {{ request()->routeIs('home') ? 'active' : '' }} mx-14">Home</a></li>
                 <li><a href="{{ route('about') }}" class="nav-link {{ request()->routeIs('about') ? 'active' : '' }} mx-14">Tentang</a></li>
                 <li><a href="{{ route('event') }}" class="nav-link {{ request()->routeIs('event') ? 'active' : '' }} mx-14">Aksi</a></li>
                 <li><a href="{{ route('artikel') }}" class="nav-link {{ request()->routeIs('artikel') ? 'active' : '' }} mx-14">Berita</a></li>

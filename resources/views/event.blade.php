@@ -27,8 +27,8 @@
                 <div class="flex gap-5 max-md:flex-col">
                     <div class="flex flex-col w-6/12 max-md:ml-0 max-md:w-full">
                         <img loading="lazy"
-                            src="https://cdn.builder.io/api/v1/image/assets/TEMP/02138b853af30841ae6c5fd72f62133b8815fd07d908f6b3c2cd0f85096ec136?placeholderIfAbsent=true&apiKey=c1377a7c791a4a95a2c1ef4a3fe24484"
-                            alt="Image representing Package 2"
+                            src="{{asset($event->image)}}"
+                            alt="Image"
                             class="object-contain grow mt-12 w-full rounded-3xl aspect-[1.34] max-md:mt-10 max-md:max-w-full" />
                     </div>
                     <div class="flex flex-col w-6/12 max-md:ml-0 max-md:w-full">
