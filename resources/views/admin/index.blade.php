@@ -7,7 +7,7 @@
 
         <!-- Tombol Add News -->
         <a href="{{ route('admin.berita.get') }}" class="bg-blue-950 p-2 px-4 rounded-md text-white nav-link {{ request()->routeIs('admin.berita.get') ? 'active' : '' }} mx-14">
-            Add Event
+            Add Article
         </a>
     </div>
 </x-app-layout>

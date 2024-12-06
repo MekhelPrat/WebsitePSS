@@ -11,32 +11,13 @@
             
             <!-- Nav -->
             <ul id="menu" class="hidden flex-col sm:flex sm:flex-row gap-3 sm:gap-5 md:gap-8 lg:gap-10 self-stretch my-auto text-white max-w-full">
-                <li><a href="{{ route('admin.index') }}" class="nav-link {{ request()->routeIs('home') ? 'active' : '' }} mx-14">Home</a></li>
-                <li><a href="{{ route('about') }}" class="nav-link {{ request()->routeIs('about') ? 'active' : '' }} mx-14">Tentang</a></li>
-                <li><a href="{{ route('event') }}" class="nav-link {{ request()->routeIs('event') ? 'active' : '' }} mx-14">Aksi</a></li>
-                <li><a href="{{ route('artikel') }}" class="nav-link {{ request()->routeIs('artikel') ? 'active' : '' }} mx-14">Berita</a></li>
-                
-                <!-- Gabung Dropdown -->
-                <li class="relative group">
-                    <button class="nav-link mx-12 flex items-center">Gabung
-                        <svg class="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                        </svg>
-                    </button>
-                    <!-- Dropdown menu -->
-                    <ul class="absolute left-0 hidden bg-blue-950 text-white p-4 w-48 rounded-lg z-50 group-hover:block shadow">
-                        <li><a href="{{ route('relawan') }}" class="nav-link {{ request()->routeIs('relawan') ? 'active' : '' }} block px-4 py-2">Relawan</a></li>
-                        <li><a href="{{ route('magang') }}" class="nav-link {{ request()->routeIs('magang') ? 'active' : '' }} block px-4 py-2">Magang</a></li>
-                        <li><a href="{{ route('mitra') }}" class="nav-link {{ request()->routeIs('mitra') ? 'active' : '' }} block px-4 py-2">Mitra</a></li>
-                    </ul>
-                </li>
-
+                <li><a href="{{ route('admin.index') }}" class="nav-link {{ request()->routeIs('admin.index') ? 'active' : '' }} mx-14">Home</a></li>
+                <li><a href="{{ route('admin.store.get') }}" class="nav-link {{ request()->routeIs('admin.store.get') ? 'active' : '' }} mx-14">Add Event</a></li>
+                <li><a href="{{ route('admin.berita.get') }}" class="nav-link {{ request()->routeIs('admin.berita.get') ? 'active' : '' }} mx-14">Add News</a></li>
             </ul>
 
-            <!-- Donasi Button -->
-            <a href="{{ route('donasi') }}" class="{{ request()->routeIs('mitra') ? 'active' : '' }} self-stretch px-4 sm:px-5 md:px-7 py-2 sm:py-3 md:py-4 my-auto bg-blue-500 rounded-[50px] text-stone-50 hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-700 transition-colors duration-300">
-                Donasi
-            </a>
+            <div class="self-stretch px-4 sm:px-5 md:px-7 py-2 sm:py-3 md:py-4 my-auto"></div>
+
         </div>
     </nav>
 </header>

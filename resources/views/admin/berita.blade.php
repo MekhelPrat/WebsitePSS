@@ -3,7 +3,7 @@
 @section('content')
     <div class="bg-white">
         <!-- Navigation Bar -->
-        @include('includes.header')
+        @include('includes.headerAdmin')
 
 
 
@@ -27,46 +27,46 @@
 
                     <!-- Judul Berita -->
                     <div class="mb-4">
-                        <label for="judul" class="block text-lg font-semibold">Judul Berita</label>
+                        <label for="title" class="block text-lg font-semibold">Title</label>
                         <input type="text" id="title" name="title"
-                            class="w-full p-2 border border-gray-300 rounded mt-2" value="{{ old('judul') }}" required>
-                        @error('judul')
+                            class="w-full p-2 border border-gray-300 rounded mt-2" value="{{ old('title') }}" required>
+                        @error('title')
                             <p class="text-red-500 text-sm mt-1">{{ $message }}</p>
                         @enderror
                     </div>
 
                     <!-- Tanggal Berita -->
                     <div class="mb-4">
-                        <label for="tanggal" class="block text-lg font-semibold">Tanggal Berita</label>
-                        <input type="date" id="tanggal" name="tanggal"
-                            class="w-full p-2 border border-gray-300 rounded mt-2" value="{{ old('tanggal') }}" required>
-                        @error('tanggal')
+                        <label for="date" class="block text-lg font-semibold">Date</label>
+                        <input type="date" id="date" name="date"
+                            class="w-full p-2 border border-gray-300 rounded mt-2" value="{{ old('date') }}" required>
+                        @error('date')
                             <p class="text-red-500 text-sm mt-1">{{ $message }}</p>
                         @enderror
                     </div>
 
                     <!-- Isi Berita -->
                     <div class="mb-4">
-                        <label for="isi" class="block text-lg font-semibold">Isi Berita</label>
-                        <textarea id="isi" name="isi" rows="5" class="w-full p-2 border border-gray-300 rounded mt-2" required>{{ old('isi') }}</textarea>
-                        @error('isi')
+                        <label for="description" class="block text-lg font-semibold">Description</label>
+                        <textarea id="description" name="description" rows="5" class="w-full p-2 border border-gray-300 rounded mt-2" required>{{ old('description') }}</textarea>
+                        @error('description')
                             <p class="text-red-500 text-sm mt-1">{{ $message }}</p>
                         @enderror
                     </div>
 
                     <!-- Gambar -->
                     <div class="mb-4">
-                        <label for="gambar" class="block text-lg font-semibold">Gambar Berita (opsional)</label>
-                        <input type="file" id="gambar" name="gambar"
+                        <label for="image" class="block text-lg font-semibold">Upload Image</label>
+                        <input type="file" id="image" name="image"
                             class="w-full p-2 border border-gray-300 rounded mt-2">
-                        @error('gambar')
+                        @error('image')
                             <p class="text-red-500 text-sm mt-1">{{ $message }}</p>
                         @enderror
                     </div>
 
                     <!-- Tombol Submit -->
                     <button type="submit" class="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-700">
-                        Simpan Berita
+                        Add
                     </button>
                 </form>
             </div>

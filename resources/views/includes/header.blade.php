@@ -36,9 +36,15 @@
             </ul>
 
             <!-- Donasi Button -->
-            <a href="{{ route('donasi') }}" class="{{ request()->routeIs('mitra') ? 'active' : '' }} self-stretch px-4 sm:px-5 md:px-7 py-2 sm:py-3 md:py-4 my-auto bg-blue-500 rounded-[50px] text-stone-50 hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-700 transition-colors duration-300">
+            {{-- <a href="{{ route('donasi') }}" class="{{ request()->routeIs('mitra') ? 'active' : '' }} self-stretch px-4 sm:px-5 md:px-7 py-2 sm:py-3 md:py-4 my-auto bg-blue-500 rounded-[50px] text-stone-50 hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-700 transition-colors duration-300">
+                Donasi
+            </a> --}}
+
+            <a href="{{ route('donasi') }}" class="{{ request()->routeIs('mitra') ? 'active' : '' }} self-stretch px-4 sm:px-5 md:px-7 py-2 sm:py-3 md:py-4 my-auto bg-white-500 rounded-[50px] text-blue-950 hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-700 transition-colors duration-300">
                 Donasi
             </a>
+
+
         </div>
     </nav>
 </header>

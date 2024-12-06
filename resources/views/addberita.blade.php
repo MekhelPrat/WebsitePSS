@@ -1,4 +1,4 @@
-@extends('base.app')
+{{-- @extends('base.app')
 
 @section('content')
 <div class="bg-white">
@@ -64,4 +64,4 @@
     <!-- Footer -->
     @include('includes.footer')
 </div>
-@endsection
+@endsection --}}

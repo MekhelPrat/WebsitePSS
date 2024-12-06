@@ -96,7 +96,6 @@ class AdminController extends Controller
                 'image' => 'assets/' . $image,
             ]);
 
-            dd($item);
             // return response()->json([
             //     'message' => 'Item successfully added!',
             //     'data' => $item,
